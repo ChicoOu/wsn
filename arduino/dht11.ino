@@ -11,10 +11,7 @@ SoftwareSerial BT(8,9);
 void setup()
 {
   Serial.begin(9600);
-  Serial.println("DHT11 TEST PROGRAM ");
-  Serial.print("LIBRARY VERSION: ");
-  Serial.println(DHT11LIB_VERSION);
-  Serial.println();
+  BT.begin(9600);
 }
 
 void loop()
